@@ -21,6 +21,7 @@ public class Main {
                 score++;
             }else {
                 System.out.print("F ");
+                score++;
             }
         }
     }
