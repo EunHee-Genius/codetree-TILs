@@ -8,7 +8,7 @@ public class Main {
 
         for(int i = 0; i<5; i++){
             arr[i] = sc.nextInt();
-            if(arr[i]%2!=0){
+            if(arr[i]%2==0){
                 cnt ++;
             }
         }System.out.println(cnt);
