@@ -12,7 +12,7 @@ public class Main {
             arr[i] = sc.nextInt();
             if (arr[i]%3 ==0){
                 three++;
-            } else if(arr[i]%5 == 0){
+            } if(arr[i]%5 == 0){
                 five++;
             }
         }System.out.print(three + " " + five);
