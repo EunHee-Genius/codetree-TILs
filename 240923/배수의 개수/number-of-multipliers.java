@@ -15,7 +15,7 @@ public class Main {
             } else if(arr[i]%5 == 0){
                 five++;
             }
-        }System.out.print(three + " " five);
+        }System.out.print(three + " " + five);
     
     }
 }
