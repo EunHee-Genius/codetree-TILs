@@ -20,6 +20,8 @@ public class Main {
             }else{
                 System.out.println("No");
             }
-        }
+        }else{
+                System.out.println("No");
+            }
     }
 }
