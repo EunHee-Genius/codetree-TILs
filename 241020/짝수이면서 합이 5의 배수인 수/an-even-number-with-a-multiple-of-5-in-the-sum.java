@@ -17,9 +17,9 @@ public class Main {
         if(n%2==0){
             if((a+b)%5 ==0){
             System.out.println("Yes");
+            }else{
+                System.out.println("No");
             }
-        }else{
-            System.out.println("No");
         }
     }
 }
