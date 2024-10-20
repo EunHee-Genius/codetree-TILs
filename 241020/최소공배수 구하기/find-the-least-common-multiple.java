@@ -15,9 +15,7 @@ public class Main {
                     x=i;
             }
         }
-        int q = n/x;
-        int p = m/x;
 
-        System.out.print(q*p*x);
+        System.out.print(n*m/x);
     }
 }
