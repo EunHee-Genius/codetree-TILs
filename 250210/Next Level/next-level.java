@@ -8,12 +8,7 @@ class User{
         this.id = "";
         this.level = 0;
     }
-
-    public User(String id, int level){
-        this.id = id;
-        this.level = level;
     }
-}
 
 public class Main {
     public static void main(String[] args){
@@ -23,12 +18,10 @@ public class Main {
     user.id = "codetree";
     user.level = 10;
 
-    String id = sc.next();
-    int level = sc.nextInt();
-
-    User user2 = new User(id, level);
-
     System.out.println("user " + user.id + " lv " + user.level);
-    System.out.println("user " + user2.id + " lv " + user2.level);
+
+    user.id = sc.next();
+    user.level = sc.nextInt();
+    System.out.println("user " + user.id + " lv " + user.level);
     }
 }
