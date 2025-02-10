@@ -1,30 +1,34 @@
 import java.util.*;
 
-class Meeting {
-    String code;
-    char place;
-    int time;
+class User{
+    String id;
+    int level;
 
-    public Meeting(String code, char place, int time){
-        this.code = code;
-        this.place = place;
-        this.time = time;
+    public User(){
+        this.id = "";
+        this.level = 0;
+    }
+
+    public User(String id, int level){
+        this.id = id;
+        this.level = level;
     }
 }
 
 public class Main {
     public static void main(String[] args){
+    Scanner sc = new Scanner(System.in);
 
-        Scanner sc = new Scanner(System.in);
+    User user = new User();
+    user.id = "codetree";
+    user.level = 10;
 
-        String code = sc.next();
-        char place = sc.next().charAt(0);
-        int time = sc.nextInt();
+    String id = sc.next();
+    int level = sc.nextInt();
 
-        Meeting meet = new Meeting(code, place, time);
+    User user2 = new User(id, level);
 
-        System.out.println("secret code : " + meet.code);
-        System.out.println("meeting point : " + meet.place);
-        System.out.println("time : " + meet.time);
+    System.out.println("user " + user.id + " lv " + user.level);
+    System.out.println("user " + user2.id + " lv " + user2.level);
     }
 }
