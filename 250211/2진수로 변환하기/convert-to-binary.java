@@ -10,13 +10,14 @@ public class Main {
         while(true){
             if(n<2) {
                 arr[cnt] = n;
+                cnt++;
                 break;
             }
             arr[cnt] = n%2;
             cnt++;
             n/=2;
         }
-        for(int i = cnt; i >= 0; i--){
+        for(int i = cnt-1; i >= 0; i--){
             System.out.print(arr[i]);
         }
     }
