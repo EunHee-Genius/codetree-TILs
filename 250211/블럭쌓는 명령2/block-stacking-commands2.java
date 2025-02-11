@@ -6,7 +6,7 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         int box = sc.nextInt();
         int mr = sc.nextInt();
-        int[] arr = new int[box];
+        int[] arr = new int[100];
         Arrays.fill(arr, 0);
         int cnt = 0;
 
