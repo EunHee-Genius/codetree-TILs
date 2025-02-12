@@ -8,8 +8,8 @@ public class Main {
         int[] line = new int[200]; // 선분이 겹치는 구간을 알아보는 배열
         Arrays.fill(line, 0);
         for(int i = 0; i < n; i++){
-            int a = sc.nextInt();
-            int b = sc.nextInt();
+            int a = sc.nextInt()+100 ;
+            int b = sc.nextInt()+100 ;
 
             for(int j = a; j < b; j++){
                 line[j] += 1;
