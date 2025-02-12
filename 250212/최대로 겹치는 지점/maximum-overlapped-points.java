@@ -4,22 +4,23 @@ public class Main {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();   // 선분갯수
-        int[] line = new int[200]; // 선분이 겹치는 구간을 알아보는 배열
+        int n = sc.nextInt();   // 선분 갯수
+        int[] line = new int[100];
         Arrays.fill(line, 0);
-        for(int i = 0; i < n; i++){
-            int a = sc.nextInt()+100 ;
-            int b = sc.nextInt()+100 ;
 
-            for(int j = a; j <= b; j++){
+        for(int i = 0; i < n; i++){
+            int start = sc.nextInt();
+            int end = sc.nextInt();
+
+            for(int j = start; j <= end; j++){
                 line[j] += 1;
             }
         }
+
         int value = 0;
-        for (int i = 0; i < line.length; i++) {
-//            System.out.println(line[i]);
-            if(value < line[i]){
-                value = line[i];
+        for(int k = 0; k < line.length; k++){
+            if(value < line[k]){
+                value = line[k];
             }
         }
         System.out.println(value);
