@@ -33,7 +33,7 @@ public class Main {
             }
         }
        int cnt = 0;
-        for(int i = 0; i < line.length; i++){
+        for(int i = 0; i <= line.length; i++){
             if(line[i] >= 2){
                 cnt++;
             }
