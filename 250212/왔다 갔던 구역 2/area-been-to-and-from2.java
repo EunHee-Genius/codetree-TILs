@@ -10,29 +10,24 @@ public class Main {
 
         int now = 100;
         for(int i = 0; i < n; i++){
-//            line[start] += 1;
             int go = sc.nextInt();
             String dir = sc.next();
             if(dir.equals("R")){
-//                System.out.println("11111111111111111");
                 int right = now + go;
                 for(int j = now; j < right; j++){
                     line[j] += 1;
                     now++;
-//                    System.out.println(now + " " + go);
                 }
             }
             else if(dir.equals("L")){
-//                int go = 100 - sc.nextInt();
                 int left = now - go;
                 for(int j = now; j > left; j--){
                     line[j] += 1;
                     now--;
-//                    System.out.println(now + " " + go);
                 }
             }
         }
-       int cnt = 0;
+        int cnt = 0;
         for(int i = 0; i < line.length; i++){
             if(line[i] >= 2){
                 cnt++;
