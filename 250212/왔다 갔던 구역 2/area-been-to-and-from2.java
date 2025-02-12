@@ -21,7 +21,7 @@ public class Main {
             }
             else if(dir.equals("L")){
                 int left = now - go;
-                for(int j = now; j > left; j--){
+                for(int j = now-1; j >= left; j--){
                     line[j] += 1;
                     now--;
                 }
