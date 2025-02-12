@@ -5,7 +5,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();   // 선분 갯수
-        int[] line = new int[100];
+        int[] line = new int[200];
         Arrays.fill(line, 0);
 
         for(int i = 0; i < n; i++){
