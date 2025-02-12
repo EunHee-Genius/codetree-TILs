@@ -18,11 +18,12 @@ public class Main {
             }
         }
 
-        int value = 0;
+        int value = box[1];
         for(int i = 1; i < n+1; i++){
-//            System.out.println(box[i]);
-            if(box[i-1] < box[i]){
+//            System.out.println("box[" + i + "] : " + box[i]);
+            if(value < box[i]){
                 value = box[i];
+//                System.out.println("value : "  + value);
             }
         }
         System.out.println(value);
