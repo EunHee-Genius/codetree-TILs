@@ -6,11 +6,11 @@ public class Main {
 
             Scanner sc = new Scanner(System.in);
             int n = sc.nextInt(); // 명령 횟수
-            int[] tile = new int[200001]; // 타일
-            int[] visited = new int[200001];  // 방문여부
+            int[] tile = new int[300001]; // 타일
+            int[] visited = new int[300001];  // 방문여부
 
-            // 시작은 100에서
-            int start = 100000;
+            // 시작은 100000
+            int start = 150000;
 
             for(int i = 0; i < n; i++) {
                 int go = sc.nextInt();  // 얼마나 갈지
@@ -22,7 +22,6 @@ public class Main {
                         visited[j]++;
                         }
                     start = start+go-1;
-//                    System.out.println("start : " + start);
                 }
                 else if(dir.equals("L")){
                     for(int j = start; j > start-go; j--){
@@ -30,7 +29,6 @@ public class Main {
                         visited[j]++;
                     }
                     start = start - go + 1;
-//                    System.out.println("start : " + start);
                 }
             }
             int white = 0;
