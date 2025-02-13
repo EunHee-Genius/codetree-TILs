@@ -6,11 +6,11 @@ public class Main {
 
             Scanner sc = new Scanner(System.in);
             int n = sc.nextInt(); // 명령 횟수
-            int[] tile = new int[1000]; // 타일
-            int[] visited = new int[1000];  // 방문여부
+            int[] tile = new int[200001]; // 타일
+            int[] visited = new int[200001];  // 방문여부
 
             // 시작은 100에서
-            int start = 500;
+            int start = 100000;
 
             for(int i = 0; i < n; i++) {
                 int go = sc.nextInt();  // 얼마나 갈지
