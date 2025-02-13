@@ -18,7 +18,7 @@ public class Main {
             int x2 = sc.nextInt() + OFFSET;
             int y2 = sc.nextInt() + OFFSET;
 
-            for(int j = x1; j < x2; j++){
+            for(int j = x1; j < x2; j++){   // i+1을 함으로써 다음꺼 색칠되게함
                     for(int k = y1; k < y2; k++){
                         area[j][k] = i+1 ;
                         }
@@ -27,7 +27,7 @@ public class Main {
         int blue = 0;
         for(int i = 0; i < area.length; i++){
             for(int j = 0; j < area.length; j++){
-                if(area[i][j] %2 == 0 && area[i][j] != 0){
+                if(area[i][j] %2 == 0 && area[i][j] != 0){  // 파란색은 짝수
                     blue++;
                 }
 //                System.out.print(area[i][j]);
