@@ -31,11 +31,14 @@ class Main {
     }
 
     public static void main(String[] args) throws Exception {
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        StringTokenizer st = new StringTokenizer(br.readLine());
+        Scanner sc = new Scanner(System.in);
+//        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+//        StringTokenizer st = new StringTokenizer(br.readLine());
 
-        N = Integer.parseInt(st.nextToken());
-        M = Integer.parseInt(st.nextToken());
+//        N = Integer.parseInt(st.nextToken());
+        N = sc.nextInt();
+//        M = Integer.parseInt(st.nextToken());
+        M = sc.nextInt();
 
         arr = new int[N][M];
         check = new boolean[N][M];
@@ -43,9 +46,10 @@ class Main {
         maxValue = 0;
 
         for (int i = 0; i < N; i++) {
-            st = new StringTokenizer(br.readLine());
+//            st = new StringTokenizer(br.readLine());
             for (int j =0; j <M; j++){
-                arr[i][j] = Integer.parseInt(st.nextToken());
+//                arr[i][j] = Integer.parseInt(st.nextToken());
+                arr[i][j] = sc.nextInt();
             }
         }
 
