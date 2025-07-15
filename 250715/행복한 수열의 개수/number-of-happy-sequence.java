@@ -10,7 +10,7 @@ public class Main {
 
     public static boolean func(){
         int con = 1;
-        int maxcnt = 0;
+        int maxcnt = 1;
 
         for(int i = 1; i < n; i++){
             if(seq[i-1] == seq[i]){
